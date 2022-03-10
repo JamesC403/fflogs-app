@@ -10,8 +10,9 @@
       "name": "Server",
       "runtimeExecutable": "yarn",
       "runtimeArgs": ["run", "server"],
-      "console": "internalConsole",
+      "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
+      "outputCapture": "console",
       "env": {
         "DEBUG": "server"
       },
@@ -33,7 +34,7 @@
       "autoAttachChildProcesses": true,
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
-      "killBehavior": "polite",
+      "killBehavior": "forceful",
       "serverReadyAction": {
         "action": "debugWithChrome",
         "pattern": "^\\s*Local:\\s+(https?://\\S+)",

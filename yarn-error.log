@@ -1,0 +1,43 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add typescript express nodemone ts-node debug
+
+PATH: 
+  C:\Program Files\PowerShell\7;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Gource\cmd;C:\Users\StuffBruss\AppData\Local\Microsoft\WindowsApps;C:\Users\StuffBruss\.dotnet\tools;C:\Program Files\Git\cmd;C:\Program Files\VSCodium\bin;C:\Program Files\Microsoft VS Code\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\PowerShell\7\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\tools\flutter\bin;C:\Users\StuffBruss\.windows-build-tools\python27\;C:\Users\StuffBruss\.cargo\bin;C:\Users\StuffBruss\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\LinqPad5;C:\Users\StuffBruss\AppData\Local\Yarn\bin;C:\Users\StuffBruss\AppData\Local\Programs\Azure Data Studio\bin;C:\Program Files\OpenSSL-Win64\bin;C:\Users\StuffBruss\.dotnet\tools;C:\Program Files (x86)\Nmap;C:\Users\StuffBruss\AppData\Roaming\npm;C:\Program Files\JetBrains\JetBrains Rider 2021.2.1\bin;;C:\Users\StuffBruss\.dotnet\tools;C:\Users\StuffBruss\AppData\Local\Microsoft\WindowsApps;C:\tools\flutter\bin;;C:\Users\StuffBruss\.jetbrains;C:\Users\StuffBruss\AppData\Roaming\Python\Python39\Scripts
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  16.5.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/nodemone: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66096:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140748:22)
+      at Request.emit (node:events:394:28)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141720:10)
+      at Request.emit (node:events:394:28)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141642:12)
+      at Object.onceWrapper (node:events:513:28)
+      at IncomingMessage.emit (node:events:406:35)
+      at endReadableNT (node:internal/streams/readable:1331:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "fflogs-app",
+    "version": "1.0.0",
+    "main": "server.ts",
+    "repository": "git@github.com:JamesC403/fflogs-app.git",
+    "author": "Stuff Butt <shadie452@gmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

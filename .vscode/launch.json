@@ -1,0 +1,52 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Server",
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": ["run", "server"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "outputCapture": "console",
+      "env": {
+        "DEBUG": "server"
+      },
+      "cwd": "${workspaceFolder}",
+      "skipFiles": ["<node_internals>/**"],
+      // "program": "${workspaceFolder}\\server.ts",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"]
+    },
+    {
+      "type": "pwa-node",
+      "name": "Client",
+      "request": "launch",
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": ["run", "client"],
+      "env": {
+        "BROWSER": "none"
+      },
+      "skipFiles": ["<node_internals>/**"],
+      "autoAttachChildProcesses": true,
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "killBehavior": "forceful",
+      "serverReadyAction": {
+        "action": "debugWithChrome",
+        "pattern": "^\\s*Local:\\s+(https?://\\S+)",
+        "webRoot": "${workspaceFolder}/client/src"
+      }
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Client/Server",
+      "configurations": ["Server", "Client"],
+      "stopAll": true
+    }
+  ]
+}

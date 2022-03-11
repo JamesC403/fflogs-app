@@ -9,7 +9,8 @@
     "start": "concurrently \"yarn run server\" \"yarn run client\"",
     "client": "node start-client.js",
     "server": "cross-env DEBUG=server nodemon",
-    "server:build": "tsc"
+    "server:build": "tsc",
+    "postinstall": "cd client && yarn install"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
